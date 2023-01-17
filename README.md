@@ -49,22 +49,31 @@ To install the requirements
 ## Screenshots
 LOGIN PAGE:
 This is the Admin Login page for authentication. Username and password
+
 ![App Screenshot](Screenshot/Screenshot1.png)
+
 HOME PAGE:
 This is the main page of application,Manage Student,Dashboard,Export to CSV,Generate all Qrcode,It can also scan the qrcode while scanning the video will be stored in the video File Admin can check so that no fake attendence is marked.
+
 ![App Screenshot](Screenshot/Screenshot2.png)
+
 MANAGEMENT PAGE:
 IN here student data can be added, updated, deleted, Generate single Qrcode.
+
 ![App Screenshot](Screenshot/Screenshot4.png)
 ![App Screenshot](Screenshot/Screenshot5.png)
 ![App Screenshot](Screenshot/Screenshot6.png)
 ![App Screenshot](Screenshot/Screenshot7.png)
 ![App Screenshot](Screenshot/Screenshot8.png)
+
 Dashboard PAGE:
 Here you can view the attendence and strength of classroom through pie chart you can view attendence
+
 ![App Screenshot](Screenshot/Screenshot3.png) 
 ![App Screenshot](Screenshot/Screenshot10.png) 
+
 SCANNING WINDOW:
+
 ![App Screenshot](Screenshot/Screenshot9.png)
 
 ## 🚀 About Project
