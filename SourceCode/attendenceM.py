@@ -208,7 +208,6 @@ class Ui_Form(object):
             pass
         result = self.cur.fetchall()
         self.tableWidget.setRowCount(0)
-        self.tableWidget.setHorizontalHeader(self.p)
         for row_no , row_data in enumerate(result):
             self.tableWidget.insertRow(row_no)
             for col_no , data in enumerate(row_data):
