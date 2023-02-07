@@ -15,6 +15,7 @@ class Camera():
         self.cap = cv2.VideoCapture(0)  # Prepare the camera...
          
         self.video = cv2.VideoWriter('video/webcam.avi', VideoWriter_fourcc(*'MP42'), 25.0, (640,480))
+        self.a = 'GIVE YOUR PATH'
         cv2.getWindowProperty('Demo', cv2.WND_PROP_VISIBLE)
         conn = mysql.connector.connect(host='localhost',database='college',user='root',password='1864',port='3306')
         self.names = []
@@ -76,11 +77,13 @@ class Camera():
                 for obj in decodedObjects:
                     mydata = obj.data.decode('utf-8')
                     self.checkData(mydata)
+                    a = str(mydata)
                     pts = np.array([obj.polygon],np.int32)
                     pts = pts.reshape((-1,1,2))  
                     cv2.polylines(frame,[pts],True,(255,0,255),5)  
                     pts2 = obj.rect
                     cv2.putText(frame,mydata,(pts2[0],pts2[1]),cv2.FONT_HERSHEY_DUPLEX,0.9,(255,0,255),2)
+                    cv2.imwrite(self.a+f"/{a}.png",frame)
                     time.sleep(1)  
                 if _ is not None:     
                     cv2.imshow("cap", frame)
