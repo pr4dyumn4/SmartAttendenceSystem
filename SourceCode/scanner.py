@@ -15,7 +15,7 @@ class Camera():
         self.cap = cv2.VideoCapture(0)  # Prepare the camera...
          
         self.video = cv2.VideoWriter('video/webcam.avi', VideoWriter_fourcc(*'MP42'), 25.0, (640,480))
-        self.a = 'GIVE YOUR PATH'
+        self.a = 'Pics'
         cv2.getWindowProperty('Demo', cv2.WND_PROP_VISIBLE)
         conn = mysql.connector.connect(host='localhost',database='college',user='root',password='1864',port='3306')
         self.names = []
